@@ -38,12 +38,12 @@ strong {
     color: #333;
 }
 
-/* Specific Styling for our Form */
+/* ////////////////////////////////////Specific Styling for our Form///////////////////////////// */
 
 .container {
     height: 100vh;
-    border: 10px solid black;
     display: flex;
+    flex-wrap: wrap;
 }
 
 section#image {
@@ -58,7 +58,15 @@ section#content {
     justify-content: space-around;
 }
 
-/* Styling the content section */
+/* ///////////////Styling the image part////////////////////// */
+.container>#image {
+    background-image: url(./assets/mecca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* ///////////////Styling the content section///////////////// */
 
 #content>.descraption {
     display: flex;
