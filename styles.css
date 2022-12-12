@@ -1,0 +1,57 @@
+/* General Styling */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.75;
+    font-size: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 3em 0 1em;
+}
+
+p,
+ul,
+ol {
+    color: #1d1d1d;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    color: #555;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+/* Specific Styling for our Form */
+
+.container {
+    height: 100vh;
+    border: 10px solid black;
+    display: flex;
+}
+
+section#image {
+    border: 2px solid red;
+    flex: 1;
+}
+
+section#content {
+    border: 2px solid blue;
+    flex: 2;
+}
