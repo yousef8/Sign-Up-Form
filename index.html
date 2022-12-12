@@ -26,7 +26,7 @@
 
 <body>
     <div class="container">
-        <section id="image" style="">
+        <section id="image">
             <h1>Here lies the image</h1>
         </section>
         <section id="content">
@@ -40,29 +40,43 @@
                 </p>
             </div>
 
-            <form action="#" method="post" id="the_form">
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" name="first_name" id="first_name">
+            <form action="" method="getS" id="the_form">
+                <div class="field">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name" autofocus required>
+                </div>
 
-                <label for="last_name">LAST NAME</label>
-                <input type="text" name="last_name" id="last_name">
+                <div class="field">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
 
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
+                <div class="field">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" title="Enter a valid Email address
+                    " required>
+                </div>
 
-                <label for="phone_number">phone number</label>
-                <input type="tel" name="phone_numer" id="phone_number">
+                <div class="field">
+                    <label for="phone_number">phone number</label>
+                    <input type="tel" name="phone_numer" id="phone_number" required>
+                </div>
 
-                <label for="password">password</label>
-                <input type="password" name="password" id="password">
+                <div class="field">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password" pattern="\d" title="only numbers accepted"
+                        required>
+                </div>
 
-                <label for="repeated_password">confirm password</label>
-                <input type="password" name="repeated_password" id="repeated_password">
+                <div class="field">
+                    <label for="repeated_password">confirm password</label>
+                    <input type="password" name="repeated_password" id="repeated_password" required>
+                </div>
             </form>
 
             <div class="submit">
-                <input type="button" value="Create Account">
-                <p>Already have an account?<a href="#">Log in</a></p>
+                <input type="submit" value="Create Account" class="button-6" form="the_form">
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </section>
     </div>
