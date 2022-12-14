@@ -41,7 +41,7 @@ strong {
 /* ////////////////////////////////////Google Fonts/////////////////////////////////////////////// */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
-/* ////////////////////////////////////Specific Styling for our Form///////////////////////////// */
+/* ////////////////////////////////////Specific Styling for our Page///////////////////////////// */
 
 .container {
     height: 100vh;
@@ -91,7 +91,7 @@ section#content {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* ////////////////////////////unsplash image attribuion/////////////////////////////////////// */
+/* unsplash image attribuion */
 
 #image>.attribution {
     background-color: rgba(51, 51, 51, 0.9);
@@ -107,7 +107,7 @@ a {
     color: rgb(80, 200, 120)
 }
 
-/* /////////////////////////////Icons3 image attribution//////////////////////////////////////// */
+/* Icons3 image attribution */
 
 .logo>div {
     position: absolute;
@@ -167,14 +167,29 @@ form label {
     align-items: center;
 }
 
-/* /////////////////////////////////////Footer/////////////////////////////////////////////////// */
+/* ///////////////////////////////////////Styling Form///////////////////////////////////////// */
 
-footer {
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    font-size: small;
+form>.field:nth-child(5)>input[type="password"]:user-invalid {
+    border: 2px solid red;
 }
+
+form>.field:nth-child(5)>input[type="password"]:user-invalid+small {
+    color: red;
+}
+
+form>.field>input[type="email"]:user-invalid {
+    border: 2px solid red;
+}
+
+form>.field:not(.field:nth-child(6))>input:valid {
+    border: 2px solid green;
+}
+
+#passwordHelpBlock {
+    font-size: small;
+    display: block;
+}
+
 
 /* ///////////////////////////////////////Styling buttons/////////////////////////////////////// */
 .button-6 {
