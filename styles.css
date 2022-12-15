@@ -190,6 +190,29 @@ form>.field:not(.field:nth-child(6))>input:valid {
     display: block;
 }
 
+#noMatchHelpBlock,
+#matchHelpBlock {
+    display: none;
+}
+
+.match {
+    border: 2px solid green;
+}
+
+.noMatch {
+    border: 2px solid red;
+}
+
+.showNoMatch {
+    display: block !important;
+    color: red;
+}
+
+.showMatch {
+    display: block !important;
+    color: green;
+}
+
 
 /* ///////////////////////////////////////Styling buttons/////////////////////////////////////// */
 .button-6 {
