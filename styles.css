@@ -10,15 +10,6 @@ html {
     font-size: 1.25em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 3em 0 1em;
-}
-
 p,
 ul,
 ol {
@@ -168,6 +159,15 @@ form label {
 }
 
 /* ///////////////////////////////////////Styling Form///////////////////////////////////////// */
+
+#pilgrimage {
+    padding: 0 1rem;
+    background-color: white;
+}
+
+#pilgrimage>p {
+    color: rgb(80, 200, 120);
+}
 
 form>.field:nth-child(5)>input[type="password"]:user-invalid {
     border: 2px solid red;
