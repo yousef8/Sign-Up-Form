@@ -52,3 +52,20 @@ passwordElement.addEventListener('input', e => {
 confirmElement.addEventListener('input', (e) => {
     checkBothPasswordMatch(passwordElement.value, confirmElement.value);
 })
+
+// submitting form
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', e => {
+    console.log(e.target);
+    e.preventDefault();
+    if (checkBothPasswordMatch(passwordElement.value, confirmElement.value)) {
+        console.log('submitted');
+        document.querySelector('#success').style.display = 'block';
+        setTimeout(() => { }, 3000);
+        e.target.submit();
+        return;
+    }
+    console.log('Not Submitted');
+})
